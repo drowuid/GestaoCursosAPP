@@ -49,7 +49,7 @@ class CourseListActivity : AppCompatActivity() {
             CourseDatabaseHelper.TABLE_COURSES, null, null, null, null, null, null
         )
 
-        courseList.clear() // ✅ Clear the existing list
+        courseList.clear()
 
         with(cursor) {
             while (moveToNext()) {
@@ -64,11 +64,11 @@ class CourseListActivity : AppCompatActivity() {
                     edition = getString(getColumnIndexOrThrow(CourseDatabaseHelper.COLUMN_EDITION)),
                     imagePath = getString(getColumnIndexOrThrow(CourseDatabaseHelper.COLUMN_IMAGE_PATH))
                 )
-                courseList.add(course) // ✅ Add to original list (not a new one)
+                courseList.add(course)
             }
         }
         cursor.close()
-        courseAdapter.notifyDataSetChanged() // ✅ Notify adapter to refresh the list
+        courseAdapter.notifyDataSetChanged()
     }
 
 

@@ -27,13 +27,15 @@
             android:id="@+id/etStartDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Data Inicio (YYYY-MM-DD)" />
+            android:hint="Data Início (DD-MM-YYYY)"
+            android:inputType="date" />
 
         <EditText
             android:id="@+id/etEndDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Data Fim (YYYY-MM-DD)" />
+            android:hint="Data Fim (DD-MM-YYYY)"
+            android:inputType="date" />
 
         <EditText
             android:id="@+id/etPrice"

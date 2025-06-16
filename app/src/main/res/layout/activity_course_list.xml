@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F5F5F5"
     tools:context=".CourseListActivity">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -17,11 +18,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnExit"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sair"
+        android:textColor="#6200EE"
+        app:strokeColor="#6200EE"
+        app:strokeWidth="1dp"
+        android:backgroundTint="#FFFFFF"
+        app:cornerRadius="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,9 +40,10 @@
         android:layout_height="wrap_content"
         android:contentDescription="Add Course"
         android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="#6200EE"
+        app:tint="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/btnExit"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-

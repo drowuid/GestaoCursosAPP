@@ -1,23 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"  android:padding="24dp">
+    android:background="#F5F5F5"
+    android:padding="24dp"
+    android:id="@+id/main">
 
-    <TextView
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CESAE Courses App\nCreated by Pedro Rodrigues"
-        android:textSize="18sp"
-        android:textAlignment="center" />
-
-    <TextView
-        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"> <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="A special thank you to CESAE for making this possible"
-        android:textSize="18sp"
+        android:text="CESAE Courses App"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
         android:textAlignment="center"
-        android:layout_marginTop="16dp" />
+        android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Created by Pedro Rodrigues"
+            android:textSize="18sp"
+            android:textColor="#757575"
+            android:textAlignment="center"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A special thank you to CESAE for making this possible"
+            android:textSize="20sp"
+            android:textColor="#6200EE"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:lineSpacingExtra="4dp" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="32dp" /> <com.google.android.material.button.MaterialButton
+    android:id="@+id/btnBack"
+    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Voltar"
+    android:textColor="#6200EE"
+    android:backgroundTint="#FFFFFF"
+    app:strokeColor="#6200EE"
+    app:strokeWidth="1dp"
+    app:cornerRadius="8dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
 </LinearLayout>
